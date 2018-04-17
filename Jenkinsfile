@@ -1,8 +1,5 @@
 pipeline {
-   agent { docker { image 'maven:3.5-alpine' } }
-
-   options {
-      buildDiscarder(logRotator(numToKeepStr:'10'))
+   agent any
    }
 
    stages {
